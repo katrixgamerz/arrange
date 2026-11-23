@@ -172,10 +172,10 @@ export const botConfig = {
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity:    ,
+    baseBankCapacity:    1000000,
 
     // Daily reward amount.
-    dailyAmount: ,
+    dailyAmount: 100,
 
     // Work command random payout range.
     workMin: 100,
@@ -188,7 +188,7 @@ export const botConfig = {
     // Command cooldowns (milliseconds).
     cooldowns: {
       daily: 24 * 60 * 60 * 1000,
-      work: 60 * 60 * 100,
+      work: 0.2 * 0.2 * 100,
       crime: 2 * 60 * 60 * 100,
       rob: 4 * 60 * 60 * 1000,
     },
