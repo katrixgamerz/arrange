@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "I am stalking you!",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -52,7 +52,7 @@ export const botConfig = {
 
     // Command prefix for text-based commands (e.g., "!" for "!ping").
     // Supports both slash commands and prefix commands.
-    prefix: process.env.PREFIX || "!",
+    prefix: process.env.PREFIX || "a!",
   },
 
   // =========================
@@ -93,7 +93,7 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
+      primary: "#9966CC",
       secondary: "#2F3136",
 
       // Standard status colors for success/error/warning/info messages.
