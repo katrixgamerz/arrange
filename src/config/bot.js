@@ -172,7 +172,7 @@ export const botConfig = {
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity:    1000000,
+    baseBankCapacity:    null,
 
     // Daily reward amount.
     dailyAmount: 100,
@@ -185,12 +185,12 @@ export const botConfig = {
     begMin: 5,
     begMax: 50,
 
-    // Command cooldowns (milliseconds).
+    // Command cooldowns (seconds).
     cooldowns: {
       daily: 24 * 60 * 60 * 1000,
-      work: 5 * 5 * 100,
-      crime: 5 * 5 * 60 * 100,
-      rob: 4 * 60 * 60 * 1000,
+      work: 5 * 5 * 10,
+      crime: 5 * 5 * 60 * 10,
+      rob: 4 * 60 * 60 * 100,
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
@@ -198,7 +198,7 @@ export const botConfig = {
 
     // Jail time after failed rob (milliseconds).
     // 200 = 0.1 hour.
-    robFailJailTime: 10,
+    robFailJailTime: 200,
   },
 
   // =========================
@@ -214,7 +214,7 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1574375081289846784,
 
     // Role IDs allowed to manage/support tickets.
     supportRoles: [],
