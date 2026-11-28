@@ -93,38 +93,11 @@ Arrange offers a complete suite of tools for Discord server management and commu
 <a name="quick-setup"></a>
 ## Quick Setup (Recommended for non-coders)
 
-### Video Tutorial
-For a detailed step-by-step setup guide, watch our comprehensive video tutorial:
-[**TitanBot Setup Tutorial**](https://www.youtube.com/@TouchDisc)
 
-## Docker Deployment (Recommended)
 
-TitanBot is fully containerized for easy deployment.
+   
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/codebymitch/TitanBot.git
-   cd TitanBot
-   ```
 
-2. **Configure environment variables:**
-   ```bash
-   cp .env.example .env
-   ```
-   Set at minimum `DISCORD_TOKEN`, `CLIENT_ID`, and `GUILD_ID`. Docker Compose also reads `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DB` from `.env` (defaults: `arrange` / `password` / `arrange`).
-
-3. **Build and start the containers:**
-   ```bash
-   docker compose up -d --build
-   ```
-
-4. **Check status:**
-   ```bash
-   docker compose ps
-   curl http://localhost:3000/health
-   ```
-
-This starts the bot and PostgreSQL. The compose file sets `POSTGRES_SSL=false` and `AUTO_MIGRATE=true` for the bundled database. Music uses public Lavalink v4 nodes from `lavalink/nodes.json` by default.
 
 ### Music
 
@@ -142,13 +115,7 @@ Music uses [Lavalink v4](https://github.com/lavalink-devs/Lavalink) via [Riffy](
 3. Override nodes inline with `LAVALINK_NODES` (JSON array) or point at another file with `LAVALINK_NODES_FILE`.
 4. Use `/play <song>` from a voice channel, or `/join` to connect without playing. Prefix shortcuts: `join`, `np`, `leave`, `pause`, `resume`, `skip`, `stop`, `volume <0-100>`, or `music <subcommand>`. Use `/nowplaying` and `/queue` for status; `/music` for loop, shuffle, seek, and other controls.
 
-### Using GitHub Container Registry
 
-The bot is automatically published to GitHub Container Registry on every push to main.
-
-```bash
-docker pull ghcr.io/codebymitch/titanbot:main
-```
 
 <a name="manual-installation-steps"></a>
 ## Manual Installation Steps
