@@ -5,14 +5,7 @@
 [![Discord.js](https://img.shields.io/npm/v/discord.js?style=flat-square&labelColor=%23202225&color=%23202225&logo=npm&logoColor=white&logoWidth=20)](https://www.npmjs.com/package/discord.js)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23336791?logo=postgresql&logoColor=white&style=flat-square&logoWidth=20)
 
-## Table of Contents
 
-- [Features Overview](#features-overview)
-- [Quick Setup](#quick-setup)
-- [Manual Installation Steps](#manual-installation-steps)
-- [Support Server](https://discord.gg/QnWNz2dKCE)
-- [Required Bot Intents](#bot-intents)
-- [Contributing](CONTRIBUTING.md)
 
 <a name="features-overview"></a>
 ## Features Overview
